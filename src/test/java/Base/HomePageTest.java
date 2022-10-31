@@ -18,20 +18,38 @@ public class HomePageTest extends BaseTest{
     }
 
     @Test(priority = 2)
-    public void addUser(){
+    public void addUser1(){
         page.getInstance(HomePage.class).addUser(By.xpath("//i[@ng-class='iconClass']"));
         String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
         System.out.println("Add user page header is: "+header);
         Assert.assertEquals(header,"Add User");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"Azory");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"Kavhuru");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"akavhuru");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.password,"@test123");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName1");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName1");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User1");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass1");
         page.getInstance(BasePage.class).doClick(AddUser.customer_companyA);
         page.getInstance(BasePage.class).doClick(AddUser.customerRole);
-        page.getInstance(BasePage.class).doClick(AddUser.salesTeam);
-        page.getInstance(BasePage.class).doSendKeys(AddUser.email,"azorykavhuru@gmail.com");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"774666777");
+        page.getInstance(BasePage.class).doClick(AddUser.adminTeam);
+        page.getInstance(BasePage.class).doSendKeys(AddUser.email,"admin@mail.com");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"082555");
+        page.getInstance(BasePage.class).doClick(AddUser.saveButton);
+    }
+
+    @Test(priority = 3)
+    public void addUser2(){
+        page.getInstance(HomePage.class).addUser(By.xpath("//i[@ng-class='iconClass']"));
+        String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
+        System.out.println("Add user page header is: "+header);
+        Assert.assertEquals(header,"Add User");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName2");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName2");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User2");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass2");
+        page.getInstance(BasePage.class).doClick(AddUser.customer_companyA);
+        page.getInstance(BasePage.class).doClick(AddUser.customerRole);
+        page.getInstance(BasePage.class).doClick(AddUser.customerTeam);
+        page.getInstance(BasePage.class).doSendKeys(AddUser.email,"customer@mail.com");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"083444");
         page.getInstance(BasePage.class).doClick(AddUser.saveButton);
     }
 }

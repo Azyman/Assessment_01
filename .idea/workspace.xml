@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9ccb87f8-0128-4117-8980-077c5d19bfb2" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/AddUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/BasePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/HomePage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/Pages/Page.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/AddUserPageTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Base/HomePageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +45,7 @@
       <recent name="Base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.addUser">
+  <component name="RunManager" selected="TestNG.HomePageTest">
     <configuration name="AddUserPageTest.addUser" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Assessment_01" />
       <extension name="coverage">
@@ -149,8 +137,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTest.addUser" />
         <item itemvalue="TestNG.HomePageTest" />
+        <item itemvalue="TestNG.HomePageTest.addUser" />
         <item itemvalue="TestNG.HomePageTest.homePageTitleTest" />
         <item itemvalue="TestNG.AddUserPageTest.verifyAddUserHeaderTest" />
         <item itemvalue="TestNG.AddUserPageTest.addUser" />
