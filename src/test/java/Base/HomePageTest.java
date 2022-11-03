@@ -7,9 +7,11 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
+import java.util.random.RandomGenerator;
+
 public class HomePageTest extends BaseTest{
 
-    BasePage basePage;
+    HomePage homePage = new HomePage(driver,wait);
     @Test(priority = 1)
     public void homePageTitleTest(){
         String title = page.getInstance(HomePage.class).getHomePageTitle();
@@ -23,7 +25,7 @@ public class HomePageTest extends BaseTest{
         String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
         System.out.println("Add user page header is: "+header);
         Assert.assertEquals(header,"Add User");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName1");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName1"+"_"+homePage.randomNumberGen());
         page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName1");
         page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User1");
         page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass1");
@@ -41,7 +43,7 @@ public class HomePageTest extends BaseTest{
         String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
         System.out.println("Add user page header is: "+header);
         Assert.assertEquals(header,"Add User");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName2");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName2"+"_"+homePage.randomNumberGen());
         page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName2");
         page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User2");
         page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass2");
@@ -52,4 +54,10 @@ public class HomePageTest extends BaseTest{
         page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"083444");
         page.getInstance(BasePage.class).doClick(AddUser.saveButton);
     }
+
+    @Test(priority = 4)
+        public void printRandNum(){
+        page.getInstance(HomePage.class).randomNumberGen();
+    }
+
 }
