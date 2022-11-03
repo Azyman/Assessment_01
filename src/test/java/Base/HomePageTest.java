@@ -57,7 +57,7 @@ public class HomePageTest extends BaseTest{
 
     @Test(priority = 4)
         public void printRandNum(){
-        page.getInstance(HomePage.class).randomNumberGen();
+        System.out.println(page.getInstance(HomePage.class).randomNumberGen());
     }
 
 }
