@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9ccb87f8-0128-4117-8980-077c5d19bfb2" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Base/AddUserPageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/AddUserPageTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/BaseTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Base/HomePageTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Base/HomePageTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -47,7 +47,7 @@
       <recent name="Base" />
     </key>
   </component>
-  <component name="RunManager" selected="TestNG.HomePageTest.printRandNum">
+  <component name="RunManager" selected="TestNG.HomePageTest.addUser1">
     <configuration name="HomePageTest" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="Assessment_01" />
       <extension name="coverage">
@@ -139,9 +139,9 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.HomePageTest.printRandNum" />
         <item itemvalue="TestNG.HomePageTest.addUser1" />
         <item itemvalue="TestNG.HomePageTest.addUser2" />
+        <item itemvalue="TestNG.HomePageTest.printRandNum" />
         <item itemvalue="TestNG.HomePageTest" />
         <item itemvalue="TestNG.HomePageTest.addUser" />
       </list>

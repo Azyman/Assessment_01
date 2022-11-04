@@ -23,11 +23,6 @@ public class BaseTest{
         driver.manage().window().maximize();
         driver.get("https://www.way2automation.com/angularjs-protractor/webtables/");
 
-        try {
-            Thread.sleep(6000);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }
         //Create object of Page class: Instantiate Page class
         page = new Page(this.driver,this.wait);
     }

@@ -25,9 +25,9 @@ public class HomePageTest extends BaseTest{
         String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
         System.out.println("Add user page header is: "+header);
         Assert.assertEquals(header,"Add User");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName1"+"_"+homePage.randomNumberGen());
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName1");
         page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName1");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User1");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User1"+"_"+homePage.randomNumberGen());
         page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass1");
         page.getInstance(BasePage.class).doClick(AddUser.customer_companyA);
         page.getInstance(BasePage.class).doClick(AddUser.customerRole);
@@ -43,9 +43,9 @@ public class HomePageTest extends BaseTest{
         String header = page.getInstance(BasePage.class).doGetText(By.xpath("//h3[@class='ng-binding']"));
         System.out.println("Add user page header is: "+header);
         Assert.assertEquals(header,"Add User");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName2"+"_"+homePage.randomNumberGen());
+        page.getInstance(BasePage.class).doSendKeys(AddUser.firstName,"FName2");
         page.getInstance(BasePage.class).doSendKeys(AddUser.lastName,"LName2");
-        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User2");
+        page.getInstance(BasePage.class).doSendKeys(AddUser.userName,"User2"+"_"+homePage.randomNumberGen());
         page.getInstance(BasePage.class).doSendKeys(AddUser.password,"Pass2");
         page.getInstance(BasePage.class).doClick(AddUser.customer_companyA);
         page.getInstance(BasePage.class).doClick(AddUser.customerRole);
