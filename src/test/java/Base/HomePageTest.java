@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-import java.util.random.RandomGenerator;
-
 public class HomePageTest extends BaseTest{
 
     HomePage homePage = new HomePage(driver,wait);
@@ -34,6 +32,11 @@ public class HomePageTest extends BaseTest{
         page.getInstance(BasePage.class).doClick(AddUser.adminTeam);
         page.getInstance(BasePage.class).doSendKeys(AddUser.email,"admin@mail.com");
         page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"082555");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         page.getInstance(BasePage.class).doClick(AddUser.saveButton);
     }
 
@@ -52,6 +55,11 @@ public class HomePageTest extends BaseTest{
         page.getInstance(BasePage.class).doClick(AddUser.customerTeam);
         page.getInstance(BasePage.class).doSendKeys(AddUser.email,"customer@mail.com");
         page.getInstance(BasePage.class).doSendKeys(AddUser.cellPhone,"083444");
+        try {
+            Thread.sleep(2000);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
+        }
         page.getInstance(BasePage.class).doClick(AddUser.saveButton);
     }
 
