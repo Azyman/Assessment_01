@@ -60,6 +60,7 @@ public class HomePageTest extends BaseTest{
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
+
         page.getInstance(BasePage.class).doClick(AddUser.saveButton);
     }
 
