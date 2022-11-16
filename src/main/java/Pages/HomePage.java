@@ -26,7 +26,7 @@ AddUser addUser = new AddUser(driver,wait);
 
     public String randomNumberGen(){
         Random rand = new Random();
-        String ran = rand.toString().substring(20,22);
+        String ran = rand.toString().substring(19,22);
         return ran;
     }
 }
