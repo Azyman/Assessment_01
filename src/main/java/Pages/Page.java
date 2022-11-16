@@ -6,7 +6,6 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class Page {
     public WebDriver driver;
     public WebDriverWait wait;
-    //Testing webhooks
 
     public Page(WebDriver driver, WebDriverWait wait) {
         this.driver = driver;
