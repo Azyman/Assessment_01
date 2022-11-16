@@ -17,7 +17,7 @@ public class HomePageTest extends BaseTest{
         Assert.assertEquals(title,"Protractor practice website - WebTables");
     }
 
-    //This is the second data provider I really need this I will not quit till I win
+    //This is the second data provider I really need this I will not quit till I win, am now on github
     @Test(priority = 2)
     public void addUser1(){
         page.getInstance(HomePage.class).addUser(By.xpath("//i[@ng-class='iconClass']"));
